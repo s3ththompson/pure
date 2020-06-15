@@ -1,6 +1,6 @@
 function _pure_prompt_git_dirty
-    set --local git_dirty_symbol
-    set --local git_dirty_color
+    set --local git_dirty_symbol "$pure_symbol_git_clean"
+    set --local git_dirty_color (_pure_set_color $pure_color_git_clean)
 
     set --local is_git_dirty (
         # The first checks for staged changes, the second for unstaged ones.

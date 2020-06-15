@@ -1,10 +1,10 @@
 set --global pure_version 2.5.2 # used for bug report
 
 # Base colors
-_pure_set_default pure_color_primary blue
+_pure_set_default pure_color_primary white
 _pure_set_default pure_color_info cyan
 _pure_set_default pure_color_mute brblack
-_pure_set_default pure_color_success magenta
+_pure_set_default pure_color_success green
 _pure_set_default pure_color_normal normal
 _pure_set_default pure_color_danger red
 _pure_set_default pure_color_light white
@@ -12,23 +12,25 @@ _pure_set_default pure_color_warning yellow
 _pure_set_default pure_color_dark black
 
 # Prompt
-_pure_set_default pure_symbol_prompt "❯"
-_pure_set_default pure_symbol_reverse_prompt "❮"  # used for VI mode
-_pure_set_default pure_color_prompt_on_error pure_color_danger
-_pure_set_default pure_color_prompt_on_success pure_color_success
+_pure_set_default pure_symbol_prompt " \$"
+_pure_set_default pure_symbol_reverse_prompt " \$"  # used for VI mode
+_pure_set_default pure_color_prompt_on_error pure_color_warning
+_pure_set_default pure_color_prompt_on_success pure_color_warning
 
 # Current Working Directory
 _pure_set_default pure_color_current_directory pure_color_primary
 
 # Git
 _pure_set_default pure_enable_git true
-_pure_set_default pure_symbol_git_unpulled_commits "⇣"
-_pure_set_default pure_symbol_git_unpushed_commits "⇡"
-_pure_set_default pure_symbol_git_dirty "*"
-_pure_set_default pure_color_git_unpulled_commits pure_color_info
-_pure_set_default pure_color_git_unpushed_commits pure_color_info
+_pure_set_default pure_symbol_git_unpulled_commits "↓"
+_pure_set_default pure_symbol_git_unpushed_commits "↑"
+_pure_set_default pure_symbol_git_clean " ✔"
+_pure_set_default pure_symbol_git_dirty " ✘"
+_pure_set_default pure_color_git_unpulled_commits pure_color_light
+_pure_set_default pure_color_git_unpushed_commits pure_color_light
 _pure_set_default pure_color_git_branch pure_color_mute
-_pure_set_default pure_color_git_dirty pure_color_mute
+_pure_set_default pure_color_git_clean pure_color_success
+_pure_set_default pure_color_git_dirty pure_color_danger
 
 # SSH info
 _pure_set_default pure_color_ssh_hostname pure_color_mute
